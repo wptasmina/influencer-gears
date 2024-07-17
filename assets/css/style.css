@@ -32,33 +32,41 @@ body {
     width: 100%;
     max-width: 85%;
     margin-inline: auto;
-        border: 1px solid;
+        /* border: 1px solid; */
+}
+.btn-primary, 
+.btn-secendary{
+    color: #FFFFFF;
+    background: var(--btn-bg-color);
+    padding: 16px 25px;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: .8px;
+    border: none;
+    outline: none;
 }
 .btn-primary{
     color: #FFFFFF;
-    background: var(--btn-bg-color);
-    font-size: 1rem;
-    font-weight: 700;
-    font-family: var(--font-family);
-    padding: 16px 25px;
     border-radius: 40px;
-    border: none;
-    outline: none;
-
 }
-.btn-primary i{
+.btn-secendary{
+    border-radius: 8px;
+}
+.btn-primary>i ,
+.btn-secendary>
+ i{
     color: #FFFFFF;
 }
 section {
     margin-bottom: 60px;
 }
-.title, .card-title {
+.title, .card-title{
     color: var(--prymary-color);
     font-size: 1.75rem;
-    font-family: var(--font-family);
-    
+    font-family: var(--font-family);  
 } 
-.title {
+.title{
     font-weight: var(--font-waight-7);
     line-height: 70px;
     text-align: center;
@@ -76,17 +84,16 @@ header {
 }
 .header-container{
     margin-inline: 80px;
-    border: 1px solid #E02C6D;
-    /* height: 90vh; */
 }
-.nav-bar{
+.menu-bar{
     justify-content: space-between;
     align-items: center;
     padding-block: 10px;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 .logo{
     width: 120px;
+    height: 40px;
 }
 .nav-manu li{
     justify-content: center;
@@ -102,6 +109,7 @@ header {
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
+    padding-top: 5px;
 }
 /* Banner Section  */
 .banner{
@@ -111,7 +119,6 @@ header {
 }
 .banner-content {
     width: 50%;
-    border: 1px solid;
     margin-right: 100px;
 }
 .banner-img{
@@ -138,8 +145,6 @@ header {
     transform: translate(-50%, -50%);
     z-index: 1;
 }
-    /*  */
-
 .banner-title{
     color: var(--prymary-color);
     font-family: var(--font-family);
@@ -158,6 +163,7 @@ header {
     text-align: left;
     margin-bottom: 16px;
 }
+    /* banner End*/
 /* company-logo section start  */
 .company-logo {
     justify-content: space-between;
@@ -171,18 +177,15 @@ header {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-inline: 16px;
+    margin-bottom: 50px;
 }
 .card-body {
-    /* width: 329px; */
-    padding: 17px 15px;
-    border-radius: 5px;
-    /* margin: 25px; */
+    background: var(--white-color);
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
-    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 17px 15px;
 }
-.card-img {
-    /* width: 300px;
-    height: 256px; */
+.card-img{
     width: 100%;
 }
 .dolar {
@@ -214,6 +217,20 @@ header {
     text-align: left;
     padding-bottom: 10px;
 }
+.link-btn{
+    justify-content: end;
+    align-items: center;
+}
+.card-link, .card-icon{
+    background: var(--white-color);
+    color: #E02C6DDE;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 /* Testimonil section  */
 .testimonil-container {
     justify-content: center;
@@ -226,14 +243,63 @@ header {
     width: 100%;
 }
 .ts-contant {
-    padding-block: 23px;
+    padding-block: 40px;
     margin-left: 80px;
+    padding-right: 40px;
 }
 .ts-title {
     color: #0A0826;
     font-family: var(--font-family);
     font-size: 2.4rem;
     font-weight: 700;
-    line-height: 60px;
+    line-height: 50px;
+    margin-bottom: 10px;
     text-align: left;
+}
+/* footer section  */
+#footer {
+    /* background: var(--footer-bg); */
+background: rgb(17, 9, 31);
+}
+.footer-container {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-block: 30px;
+}
+.footer-text h2, p{
+    color: var(--white-color);
+}
+.footer-text h2{
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 36px;
+    margin-bottom: 8px;
+}
+.footer-text  p{
+    font-family: var(--font-family-inter);
+    font-size: .8rem;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: .5px;
+    margin-bottom: 8px;
+}
+.icon i{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 10px;
+    color: var(--white-color);
+}
+
+.hiden {
+    display: none;
+}
+
+
+@media screen and (max-width:576px){
+    .nav-bar{
+        /* display: none; */
+    }
 }
